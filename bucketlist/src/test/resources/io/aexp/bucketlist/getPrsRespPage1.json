@@ -1,0 +1,6453 @@
+{
+  "size": 25,
+  "limit": 25,
+  "isLastPage": false,
+  "values": [
+    {
+      "id": 669,
+      "version": 25,
+      "title": "PR title",
+      "description": "PR desc",
+      "state": "OPEN",
+      "open": true,
+      "closed": false,
+      "createdDate": 1440799745000,
+      "updatedDate": 1441727896000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "ff3250eee8fc50e04b4ab2ee72beaa96901d029d",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "bd3a497fad35ce5c04af1be76f4f455199644980",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 253,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2974,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 390,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": false
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2922,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": false
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 522,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": false
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 310,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 97,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": false
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 288,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "11"
+        ],
+        "openTaskCount": [
+          "4"
+        ],
+        "commentCount": [
+          "64"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/669",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/669"
+          }
+        ]
+      }
+    },
+    {
+      "id": 679,
+      "version": 15,
+      "title": "PR title",
+      "description": "PR desc",
+      "state": "MERGED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1441413933000,
+      "updatedDate": 1441661445000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "62f1ccd7b90521179436d87876c12c597b8855ae",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "fed1e7436a501ab555ac03415095ae383dd723e2",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 2922,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 253,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2873,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": false
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 288,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 665,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "5"
+        ],
+        "openTaskCount": [
+          "0"
+        ],
+        "commentCount": [
+          "25"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/679",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/679"
+          }
+        ]
+      }
+    },
+    {
+      "id": 676,
+      "version": 6,
+      "title": "PR title",
+      "state": "OPEN",
+      "open": true,
+      "closed": false,
+      "createdDate": 1441240494000,
+      "updatedDate": 1441643281000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "15deceea02a2f32132c83a2ce4a03b40054a2077",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "bd3a497fad35ce5c04af1be76f4f455199644980",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 2873,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 665,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 288,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2301,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2922,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": false
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "1"
+        ],
+        "openTaskCount": [
+          "0"
+        ],
+        "commentCount": [
+          "1"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/676",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/676"
+          }
+        ]
+      }
+    },
+    {
+      "id": 678,
+      "version": 3,
+      "title": "PR title",
+      "description": "PR desc",
+      "state": "MERGED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1441309083000,
+      "updatedDate": 1441310801000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "242ab781a042012538746081073940b7499c1a6d",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "159c96bd40e09d5cc389f368089f8d9bbf9bc55a",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 522,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 665,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2922,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2974,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 288,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "0"
+        ],
+        "openTaskCount": [
+          "0"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/678",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/678"
+          }
+        ]
+      }
+    },
+    {
+      "id": 677,
+      "version": 3,
+      "title": "PR title",
+      "state": "MERGED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1441243472000,
+      "updatedDate": 1441246078000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "6fb0b29169580bfd4fb2a4d9888120cd7788ed1b",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "cfa1d1dd95865ff42cb23a344d6ef2f72efa7b50",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 522,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 97,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 288,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "2"
+        ],
+        "openTaskCount": [
+          "0"
+        ],
+        "commentCount": [
+          "3"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/677",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/677"
+          }
+        ]
+      }
+    },
+    {
+      "id": 675,
+      "version": 1,
+      "title": "PR title",
+      "description": "PR desc",
+      "state": "DECLINED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1441239721000,
+      "updatedDate": 1441241399000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "05964e2c0d95d9d7d92a6ffcd64ec0f3596be60c",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "cfa1d1dd95865ff42cb23a344d6ef2f72efa7b50",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 522,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 288,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 97,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "0"
+        ],
+        "openTaskCount": [
+          "1"
+        ],
+        "commentCount": [
+          "1"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/675",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/675"
+          }
+        ]
+      }
+    },
+    {
+      "id": 674,
+      "version": 3,
+      "title": "PR title",
+      "description": "PR desc",
+      "state": "MERGED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1441145449000,
+      "updatedDate": 1441226291000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "c7ba15b795c97ae89de2edd866ce25e05e7c2bb8",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "426239525fe27b9aa57aab1d430e51b8cf810254",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 2301,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 522,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "REVIEWER",
+          "approved": false
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 816,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "REVIEWER",
+          "approved": false
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2873,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "REVIEWER",
+          "approved": true
+        }
+      ],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 288,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "1"
+        ],
+        "openTaskCount": [
+          "0"
+        ],
+        "commentCount": [
+          "6"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/674",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/674"
+          }
+        ]
+      }
+    },
+    {
+      "id": 673,
+      "version": 4,
+      "title": "PR title",
+      "state": "MERGED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1441141315000,
+      "updatedDate": 1441153728000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "1e7f30bf58f0fb5fc418a0f1cf5b6ff969cc2f79",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "95de256e4ab02a9040c23fc2a3a8fe6b179d0916",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 2873,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 288,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 665,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 522,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "1"
+        ],
+        "openTaskCount": [
+          "0"
+        ],
+        "commentCount": [
+          "2"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/673",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/673"
+          }
+        ]
+      }
+    },
+    {
+      "id": 672,
+      "version": 3,
+      "title": "PR title",
+      "state": "MERGED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1441124051000,
+      "updatedDate": 1441132294000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "f6fe7a00d16fa210d2c9fd00c2b30437035d53ca",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "e2334891061c1a8ee39fa4d9d90a0b2914f91bf7",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 97,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 310,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2922,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 288,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "1"
+        ],
+        "openTaskCount": [
+          "0"
+        ],
+        "commentCount": [
+          "8"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/672",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/672"
+          }
+        ]
+      }
+    },
+    {
+      "id": 665,
+      "version": 12,
+      "title": "PR title",
+      "description": "PR desc",
+      "state": "MERGED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1440714003000,
+      "updatedDate": 1441132028000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "3b1cb3a7bd4c30526c927e0d5f6150965162d650",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "9f7c24c6eb6417bad440f58d049eefcb337be986",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 2301,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 816,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "REVIEWER",
+          "approved": false
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2873,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "REVIEWER",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 522,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "REVIEWER",
+          "approved": false
+        }
+      ],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2922,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": false
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 97,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": false
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 288,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "12"
+        ],
+        "openTaskCount": [
+          "0"
+        ],
+        "commentCount": [
+          "21"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/665",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/665"
+          }
+        ]
+      }
+    },
+    {
+      "id": 670,
+      "version": 13,
+      "title": "PR title",
+      "description": "PR desc",
+      "state": "MERGED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1440804016000,
+      "updatedDate": 1441120817000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "d699394a3481384da2a870a1f5f3961fedeebc0a",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "76e638e421bf9c3786362be0401ad2a7f5ec1c3b",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 522,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 288,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 97,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "8"
+        ],
+        "openTaskCount": [
+          "0"
+        ],
+        "commentCount": [
+          "15"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/670",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/670"
+          }
+        ]
+      }
+    },
+    {
+      "id": 666,
+      "version": 7,
+      "title": "PR title",
+      "state": "MERGED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1440715677000,
+      "updatedDate": 1441065834000,
+      "fromRef": {
+        "id": "refs/heads/feature/UI-test-table-refactoring",
+        "displayId": "feature/UI-test-table-refactoring",
+        "latestChangeset": "f130571fd1142b0c1836b58f4a73ceb9132e1ac3",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "68f90c5271c02a20c40e8612d3c11eabc0d35254",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 2873,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 522,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": false
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 310,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 534,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "3"
+        ],
+        "openTaskCount": [
+          "0"
+        ],
+        "commentCount": [
+          "9"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/666",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/666"
+          }
+        ]
+      }
+    },
+    {
+      "id": 668,
+      "version": 5,
+      "title": "PR title",
+      "description": "PR desc",
+      "state": "MERGED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1440778492000,
+      "updatedDate": 1441041658000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "e9739222eda9747aade0ca30b16f75ed846919c9",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "bc380224339925180b48d0bf9a526966f1e7f979",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 310,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 97,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 390,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": false
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 288,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2974,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 522,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "5"
+        ],
+        "openTaskCount": [
+          "0"
+        ],
+        "commentCount": [
+          "14"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/668",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/668"
+          }
+        ]
+      }
+    },
+    {
+      "id": 671,
+      "version": 2,
+      "title": "PR title",
+      "state": "DECLINED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1441032340000,
+      "updatedDate": 1441034463000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "a398cc750b33c7ed185cae88920498df16a5522e",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master-tmp",
+        "displayId": "master-tmp",
+        "latestChangeset": "bc380224339925180b48d0bf9a526966f1e7f979",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 310,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 97,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "0"
+        ],
+        "openTaskCount": [
+          "0"
+        ],
+        "commentCount": [
+          "4"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/671",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/671"
+          }
+        ]
+      }
+    },
+    {
+      "id": 667,
+      "version": 2,
+      "title": "PR title",
+      "description": "PR desc",
+      "state": "MERGED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1440718425000,
+      "updatedDate": 1440773041000,
+      "fromRef": {
+        "id": "refs/heads/bugfix/fixing-billing-statement-tests",
+        "displayId": "bugfix/fixing-billing-statement-tests",
+        "latestChangeset": "bb3d516dfb131fd3f0985ad32884bb8d54e5ae19",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "1b11ef92343d72afa6e612307621bd881ccef8b1",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 522,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 97,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 288,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2922,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 390,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": false
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "0"
+        ],
+        "openTaskCount": [
+          "0"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/667",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/667"
+          }
+        ]
+      }
+    },
+    {
+      "id": 664,
+      "version": 1,
+      "title": "PR title",
+      "description": "PR desc",
+      "state": "DECLINED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1440712550000,
+      "updatedDate": 1440712577000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "cd228a2709402dc4fcedfe5635277c224a8d2e89",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "1b11ef92343d72afa6e612307621bd881ccef8b1",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 2301,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [],
+      "attributes": {
+        "resolvedTaskCount": [
+          "0"
+        ],
+        "openTaskCount": [
+          "0"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/664",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/664"
+          }
+        ]
+      }
+    },
+    {
+      "id": 658,
+      "version": 12,
+      "title": "PR title",
+      "description": "PR desc",
+      "state": "DECLINED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1440626640000,
+      "updatedDate": 1440712463000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "cd228a2709402dc4fcedfe5635277c224a8d2e89",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "1b11ef92343d72afa6e612307621bd881ccef8b1",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 2301,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2873,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "REVIEWER",
+          "approved": false
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 816,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "REVIEWER",
+          "approved": false
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 522,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "REVIEWER",
+          "approved": false
+        }
+      ],
+      "participants": [],
+      "attributes": {
+        "resolvedTaskCount": [
+          "3"
+        ],
+        "openTaskCount": [
+          "0"
+        ],
+        "commentCount": [
+          "5"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/658",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/658"
+          }
+        ]
+      }
+    },
+    {
+      "id": 663,
+      "version": 3,
+      "title": "PR title",
+      "description": "PR desc",
+      "state": "MERGED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1440708574000,
+      "updatedDate": 1440712237000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "cfe3e157957a229796134ccfbbb751eeb71152b5",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "5c92be09f2b38eea9a2988a6481cf6785047da74",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 2922,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 97,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 522,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 288,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 310,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "0"
+        ],
+        "openTaskCount": [
+          "0"
+        ],
+        "commentCount": [
+          "1"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/663",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/663"
+          }
+        ]
+      }
+    },
+    {
+      "id": 650,
+      "version": 24,
+      "title": "PR title",
+      "description": "PR desc",
+      "state": "MERGED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1440523533000,
+      "updatedDate": 1440709272000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "5d2c5fd38e3c5ef1f2aed93a6833336fdf88594f",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "c6f3a1dd0a6d38f4d59a9f872025c1394d62c73e",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 310,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 253,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 97,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2974,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2922,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2873,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": false
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 522,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 390,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 288,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "12"
+        ],
+        "openTaskCount": [
+          "0"
+        ],
+        "commentCount": [
+          "58"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/650",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/650"
+          }
+        ]
+      }
+    },
+    {
+      "id": 655,
+      "version": 10,
+      "title": "PR title",
+      "state": "MERGED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1440622058000,
+      "updatedDate": 1440707139000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "76b25658737226aa089dc111c98dffa4b7107de3",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "f8d4f293c2cdb7314fced20cf25bd556ca5e19f3",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 2974,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 522,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 390,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "3"
+        ],
+        "openTaskCount": [
+          "0"
+        ],
+        "commentCount": [
+          "11"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/655",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/655"
+          }
+        ]
+      }
+    },
+    {
+      "id": 659,
+      "version": 10,
+      "title": "PR title",
+      "description": "PR desc",
+      "state": "MERGED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1440631395000,
+      "updatedDate": 1440706095000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "9434987bdf4afbc000fefa872b66ed87764c9113",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "977ce1c18ddc44d0c36d6941dbb777dacb773ba1",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 816,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2873,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 522,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "3"
+        ],
+        "openTaskCount": [
+          "0"
+        ],
+        "commentCount": [
+          "3"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/659",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/659"
+          }
+        ]
+      }
+    },
+    {
+      "id": 656,
+      "version": 9,
+      "title": "PR title",
+      "state": "MERGED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1440623935000,
+      "updatedDate": 1440699301000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "4598535de10265bda45dcf5f1df37fe97961fddb",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "9cc5f5540c418bff3c0f864f869f5488c48e9147",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 2873,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 816,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2301,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 522,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": false
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "1"
+        ],
+        "openTaskCount": [
+          "0"
+        ],
+        "commentCount": [
+          "3"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/656",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/656"
+          }
+        ]
+      }
+    },
+    {
+      "id": 661,
+      "version": 11,
+      "title": "PR title",
+      "description": "PR desc",
+      "state": "MERGED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1440639042000,
+      "updatedDate": 1440698661000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "94472b927c1e5ce578afbde8a09d2077588ef798",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "14ba9ae355fc630483eb1e79d306aa9e950852cb",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 97,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 522,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2922,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": false
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 310,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "3"
+        ],
+        "openTaskCount": [
+          "0"
+        ],
+        "commentCount": [
+          "14"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/661",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/661"
+          }
+        ]
+      }
+    },
+    {
+      "id": 653,
+      "version": 18,
+      "title": "PR title",
+      "description": "PR desc",
+      "state": "MERGED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1440536751000,
+      "updatedDate": 1440696165000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "d732f683945b675586f6aae84bde0402972b61b6",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "6d5c6776b291ffdcb68b3462927e51471b67d19a",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 390,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 310,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 522,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 253,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 97,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": false
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 288,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2922,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": false
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "23"
+        ],
+        "openTaskCount": [
+          "0"
+        ],
+        "commentCount": [
+          "66"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/653",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/653"
+          }
+        ]
+      }
+    },
+    {
+      "id": 662,
+      "version": 4,
+      "title": "PR title",
+      "state": "MERGED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1440686868000,
+      "updatedDate": 1440695009000,
+      "fromRef": {
+        "id": "refs/heads/some-branch",
+        "displayId": "some-branch",
+        "latestChangeset": "7316eed2b6702dc9602eebca4ab69e6791a7721d",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "7077afafa761c7b00d03f0197a8fe1bd45f1a03c",
+        "repository": {
+          "slug": "repo",
+          "id": 25,
+          "name": "repo",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool Project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/repo/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/repo.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/repo.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/repo.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/repo/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "joe",
+          "emailAddress": "joe@foo.bar",
+          "id": 310,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "joe",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/joe",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/joe"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 253,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 288,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 2922,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        },
+        {
+          "user": {
+            "name": "joe",
+            "emailAddress": "joe@foo.bar",
+            "id": 522,
+            "displayName": "Joe User",
+            "active": true,
+            "slug": "joe",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/joe",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/joe"
+                }
+              ]
+            }
+          },
+          "role": "PARTICIPANT",
+          "approved": true
+        }
+      ],
+      "attributes": {
+        "resolvedTaskCount": [
+          "0"
+        ],
+        "openTaskCount": [
+          "0"
+        ],
+        "commentCount": [
+          "2"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/repo/pull-requests/662",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/repo/pull-requests/662"
+          }
+        ]
+      }
+    }
+  ],
+  "start": 0,
+  "nextPageStart": 25
+}

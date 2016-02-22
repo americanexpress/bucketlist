@@ -1,0 +1,376 @@
+{
+  "size": 2,
+  "limit": 25,
+  "isLastPage": true,
+  "values": [
+    {
+      "id": 2,
+      "version": 13,
+      "title": "pr title",
+      "description": "pr desc",
+      "state": "OPEN",
+      "open": true,
+      "closed": false,
+      "createdDate": 1435255579000,
+      "updatedDate": 1435261452000,
+      "fromRef": {
+        "id": "refs/heads/sample-branch",
+        "displayId": "sample-branch",
+        "latestChangeset": "81176130b2149c732d2ba4bd89cb8696251d80ec",
+        "repository": {
+          "slug": "bbs-client",
+          "id": 301,
+          "name": "bbs-client",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/bbs-client/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/bbs-client.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/bbs-client.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/bbs-client.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/bbs-client/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "938d57607f0085a2570923b1c70dc8f5d9a2c425",
+        "repository": {
+          "slug": "bbs-client",
+          "id": 301,
+          "name": "bbs-client",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/bbs-client/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/bbs-client.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/bbs-client.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/bbs-client.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/bbs-client/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "user",
+          "emailAddress": "user@foo.bar",
+          "id": 33,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "user",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/user",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/user"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [
+        {
+          "user": {
+            "name": "user2",
+            "emailAddress": "user2@foo.bar",
+            "id": 459,
+            "displayName": "Jane Reviewer",
+            "active": true,
+            "slug": "user2",
+            "type": "NORMAL",
+            "link": {
+              "url": "/users/user2",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/users/user2"
+                }
+              ]
+            }
+          },
+          "role": "REVIEWER",
+          "approved": true
+        }
+      ],
+      "participants": [],
+      "attributes": {
+        "resolvedTaskCount": [
+          "0"
+        ],
+        "openTaskCount": [
+          "1"
+        ],
+        "commentCount": [
+          "8"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/bbs-client/pull-requests/2",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/bbs-client/pull-requests/2"
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "version": 3,
+      "title": "add sample file",
+      "state": "DECLINED",
+      "open": false,
+      "closed": true,
+      "createdDate": 1435188569000,
+      "updatedDate": 1435255476000,
+      "fromRef": {
+        "id": "refs/heads/sample-branch",
+        "displayId": "sample-branch",
+        "latestChangeset": "81176130b2149c732d2ba4bd89cb8696251d80ec",
+        "repository": {
+          "slug": "bbs-client",
+          "id": 301,
+          "name": "bbs-client",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/bbs-client/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/bbs-client.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/bbs-client.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/bbs-client.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/bbs-client/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestChangeset": "75f6042fa534d1fa61c0848f97ef130a25421295",
+        "repository": {
+          "slug": "bbs-client",
+          "id": 301,
+          "name": "bbs-client",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "PROJ",
+            "id": 6,
+            "name": "Project",
+            "description": "Cool project",
+            "public": false,
+            "type": "NORMAL",
+            "link": {
+              "url": "/projects/PROJ",
+              "rel": "self"
+            },
+            "links": {
+              "self": [
+                {
+                  "href": "https://bbs/projects/PROJ"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "link": {
+            "url": "/projects/PROJ/repos/bbs-client/browse",
+            "rel": "self"
+          },
+          "cloneUrl": "https://user@bbs/scm/proj/bbs-client.git",
+          "links": {
+            "clone": [
+              {
+                "href": "https://user@bbs/scm/proj/bbs-client.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@bbs/proj/bbs-client.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "https://bbs/projects/PROJ/repos/bbs-client/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "user",
+          "emailAddress": "user@foo.bar",
+          "id": 33,
+          "displayName": "Joe User",
+          "active": true,
+          "slug": "user",
+          "type": "NORMAL",
+          "link": {
+            "url": "/users/user",
+            "rel": "self"
+          },
+          "links": {
+            "self": [
+              {
+                "href": "https://bbs/users/user"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false
+      },
+      "reviewers": [],
+      "participants": [],
+      "attributes": {
+        "resolvedTaskCount": [
+          "0"
+        ],
+        "openTaskCount": [
+          "1"
+        ],
+        "commentCount": [
+          "1"
+        ]
+      },
+      "link": {
+        "url": "/projects/PROJ/repos/bbs-client/pull-requests/1",
+        "rel": "self"
+      },
+      "links": {
+        "self": [
+          {
+            "href": "https://bbs/projects/PROJ/repos/bbs-client/pull-requests/1"
+          }
+        ]
+      }
+    }
+  ],
+  "start": 0
+}

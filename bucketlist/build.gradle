@@ -1,0 +1,71 @@
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'maven-publish'
+
+dependencies {
+  compile "org.slf4j:slf4j-api:${deps.slf4j}"
+  compile "io.reactivex:rxjava:${deps.rxjava}"
+  compile "com.ning:async-http-client:${deps.ahclient}"
+
+  compile "com.palominolabs.http:url-builder:${deps.urlbuilder}"
+
+  compile "com.fasterxml.jackson.core:jackson-databind:${deps.jackson}"
+  compile "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:${deps.jackson}"
+
+  testRuntime "org.slf4j:log4j-over-slf4j:${deps.slf4j}"
+
+  testCompile "com.github.rest-driver:rest-client-driver:${deps.restClientDriver}"
+  testCompile "junit:junit:${deps.junit}"
+  testCompile "com.google.guava:guava:${deps.guava}"
+  testRuntime "org.slf4j:slf4j-simple:${deps.slf4j}"
+}
+
+group 'io.aexp.bucketlist'
+version '0.1-SNAPSHOT'
+
+task sourceJar(type: Jar, dependsOn: classes) {
+  from sourceSets.main.allJava
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+  from javadoc.destinationDir
+}
+
+publishing {
+  publications {
+    bintray(MavenPublication) {
+      from components.java
+      groupId project.group
+      artifactId project.name
+      version project.version
+
+      artifact sourceJar {
+        classifier 'sources'
+      }
+
+      artifact javadocJar {
+        classifier 'javadoc'
+      }
+    }
+  }
+}
+
+bintray {
+  user = rootProject.hasProperty('bintrayUser') ? rootProject.property('bintrayUser') : 'FIXME'
+  key = rootProject.hasProperty('bintrayApiKey') ? rootProject.property('bintrayApiKey') : 'FIXME'
+  publications = ['bintray']
+
+  pkg {
+    repo = 'maven'
+    licenses = ['Apache-2.0']
+    vcsUrl = 'https://github.com/americanexpress/bucketlist'
+    name = project.group
+    userOrg = 'americanexpress'
+
+    version {
+      name = project.version
+      released = new Date()
+      vcsTag = 'v' + project.version
+    }
+  }
+}
+

@@ -1,0 +1,41 @@
+buildscript {
+  ext.deps = [kotlin: '1.0.0']
+
+  repositories {
+    jcenter()
+  }
+  dependencies {
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${deps.kotlin}"
+    classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.3'
+    classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.6'
+  }
+}
+
+ext.deps += [slf4j           : '1.7.16',
+             jackson         : '2.6.5',
+             rxjava          : '1.1.1',
+             ahclient        : '1.9.33',
+             urlbuilder      : '1.1.0',
+             junit           : '4.12',
+             guava           : '19.0',
+             restClientDriver: '1.1.42']
+
+subprojects {
+  repositories {
+    jcenter()
+  }
+
+  apply plugin: 'kotlin'
+
+  configurations {
+    all*.exclude module: 'log4j'
+  }
+
+  dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:${deps.kotlin}"
+  }
+}
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.11'
+}
