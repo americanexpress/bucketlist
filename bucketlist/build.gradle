@@ -20,7 +20,7 @@ dependencies {
 }
 
 group 'io.aexp.bucketlist'
-version '0.1'
+version '0.2-SNAPSHOT'
 
 task sourceJar(type: Jar, dependsOn: classes) {
   from sourceSets.main.allJava
