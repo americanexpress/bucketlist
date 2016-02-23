@@ -14,6 +14,24 @@ Some of the API responses are exposed as pages; the resulting `Observable` will 
 
 See the examples and tests for more on how to construct and use these objects. Especially, note that the Jackson `ObjectMapper` must be configured to not fail on unknown properties.
 
+Artifacts are available in [JCenter](https://bintray.com/bintray/jcenter).
+
+Gradle:
+
+```groovy
+compile 'io.aexp.bucketlist:bucketlist:0.1'
+```
+
+Maven:
+
+```xml
+<dependency>
+    <groupId>io.aexp.bucketlist</groupId>
+    <artifactId>bucketlist</artifactId>
+    <version>0.1</version>
+</dependency>
+```
+
 # Terminology
 
 You'll see references to a `project` and a `repoSlug` in the API; these are terms Bitbucket Server uses to describe the path to a particular repo. If you have a url to browse the source of a Bitbucket Server repo, like this:
