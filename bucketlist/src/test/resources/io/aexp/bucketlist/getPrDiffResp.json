@@ -1,0 +1,139 @@
+{
+  "fromHash": "16fb16e8afbe6c4087d39feddd68bdc881e302a2",
+  "toHash": "1830d0529a30d3d7253935d918ee0e34e7680c64",
+  "contextLines": 0,
+  "whitespace": "SHOW",
+  "diffs": [
+    {
+      "source": {
+        "components": [
+          "Directory",
+          "Controllers",
+          "MyAwesomeController.m"
+        ],
+        "parent": "Directory/Controllers",
+        "name": "MyAwesomeController.m",
+        "extension": "m",
+        "toString": "Directory/Controllers/MyAwesomeController.m"
+      },
+      "destination": {
+        "components": [
+          "Directory",
+          "Controllers",
+          "MyAwesomeController.m"
+        ],
+        "parent": "Directory/Controllers",
+        "name": "MyAwesomeController.m",
+        "extension": "m",
+        "toString": "Directory/Controllers/MyAwesomeController.m"
+      },
+      "hunks": [
+        {
+          "sourceLine": 143,
+          "sourceSpan": 1,
+          "destinationLine": 143,
+          "destinationSpan": 1,
+          "segments": [
+            {
+              "type": "REMOVED",
+              "lines": [
+                {
+                  "source": 143,
+                  "destination": 143,
+                  "line": "  UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@\"CANCEL_BUTTON\", nil)",
+                  "truncated": false
+                }
+              ],
+              "truncated": false
+            },
+            {
+              "type": "ADDED",
+              "lines": [
+                {
+                  "source": 144,
+                  "destination": 143,
+                  "line": "  UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil",
+                  "truncated": false
+                }
+              ],
+              "truncated": false
+            }
+          ],
+          "truncated": false
+        }
+      ],
+      "truncated": false
+    },
+    {
+      "source": null,
+      "destination": {
+        "components": [
+          "Tests",
+          "Controllers",
+          "MyAwesomeControllerTests.swift"
+        ],
+        "parent": "Tests/Controllers",
+        "name": "MyAwesomeControllerTests.swift",
+        "extension": "swift",
+        "toString": "Tests/Controllers/MyAwesomeControllerTests.swift"
+      },
+      "hunks": [
+        {
+          "sourceLine": 0,
+          "sourceSpan": 0,
+          "destinationLine": 1,
+          "destinationSpan": 46,
+          "segments": [
+            {
+              "type": "ADDED",
+              "lines": [
+                {
+                  "source": 0,
+                  "destination": 1,
+                  "line": "import XCTest",
+                  "truncated": false
+                },
+                {
+                  "source": 0,
+                  "destination": 2,
+                  "line": "@testable import MyProject",
+                  "truncated": false
+                }
+              ],
+              "truncated": false
+            }
+          ],
+          "truncated": false
+        },
+        {
+          "sourceLine": 0,
+          "sourceSpan": 0,
+          "destinationLine": 1,
+          "destinationSpan": 46,
+          "segments": [
+            {
+              "type": "ADDED",
+              "lines": [
+                {
+                  "source": 0,
+                  "destination": 1,
+                  "line": "import XCTest",
+                  "truncated": false
+                },
+                {
+                  "source": 0,
+                  "destination": 2,
+                  "line": "@testable import MyProject",
+                  "truncated": false
+                }
+              ],
+              "truncated": false
+            }
+          ],
+          "truncated": false
+        }
+      ],
+      "truncated": false
+    }
+  ]
+}
