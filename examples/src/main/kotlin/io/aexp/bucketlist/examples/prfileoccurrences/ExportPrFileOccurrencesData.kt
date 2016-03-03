@@ -21,12 +21,28 @@ import java.time.ZoneId
 import java.time.ZonedDateTime
 import java.util.ArrayList
 
+/**
+ * This example downloads diff data for PRs in the specified repo and writes occurrence counts for files that appear in
+ * at least one PR (sorted by occurrence count).
+ *
+ * We wanted to better inform our decision of when to refactor different classes by identifying which were more highly
+ * correlated with bugs. So this determines in how many PRs across a given date range was each file changed. With the
+ * 'branch filter substring', we were able to reduce the set to only ones including our 'bugfix' prefix. The results are
+ * written
+ *
+ * This example is purely a data generator because we found that inspecting the top of the resulting list provided ample
+ * insights to which files experienced the most churn with bugfixes.
+ *
+ * Usages:
+ * - make a properties file containing 'username', 'password', and 'url' info for your Bitbucket-Server instance
+ * - invoke with <path to props file> <project key> <repo slug> <branch filter substring> <start date> <end date> <output file>
+ */
 object ExportPrFileOccurrencesData {
     val logger: Logger = LoggerFactory.getLogger(javaClass)
 
     @JvmStatic fun main(args: Array<String>) {
         if (args.size != 7) {
-            System.err!!.println("Must have 7 arguments: <config file> <project key> <repo slug> <branch filter substring> <output file> <start date> <end date>")
+            System.err!!.println("Must have 7 arguments: <config file> <project key> <repo slug> <branch filter substring> <start date> <end date> <output file>")
             System.exit(1)
         }
 
@@ -36,17 +52,19 @@ object ExportPrFileOccurrencesData {
         val projectKey = args[1]
         val repoSlug = args[2]
         val branchFilterSubstring = args[3]
-        val outputCsvPath = Paths.get(args[4])
-        val startDate = ZonedDateTime.of(LocalDateTime.of(LocalDate.parse(args[5]), LocalTime.MIDNIGHT), ZoneId.of("UTC"))
-        val endDate = ZonedDateTime.of(LocalDateTime.of(LocalDate.parse(args[6]), LocalTime.MIDNIGHT), ZoneId.of("UTC"))
+        val startDate = ZonedDateTime.of(LocalDateTime.of(LocalDate.parse(args[4]), LocalTime.MIDNIGHT), ZoneId.of("UTC"))
+        val endDate = ZonedDateTime.of(LocalDateTime.of(LocalDate.parse(args[5]), LocalTime.MIDNIGHT), ZoneId.of("UTC"))
+        val outputCsvPath = Paths.get(args[6])
 
         countFileOccurrencesInPrs(client, projectKey, repoSlug, branchFilterSubstring, outputCsvPath, startDate, endDate);
     }
 
+    /**
+     * Fetches occurrence counts for files across PRs and writes the output to the specified CSV file
+     */
     private fun countFileOccurrencesInPrs(client: BucketListClient, projectKey: String, repoSlug: String,
                                           branchFilterSubstring: String, outputCsvPath: Path, startDate: ZonedDateTime,
                                           endDate: ZonedDateTime) {
-
         val fileOccurrences = getFlattenedCountOfFilesFromPrs(client, projectKey, repoSlug, branchFilterSubstring, startDate, endDate)
                 .toBlocking()
                 .first()
@@ -55,6 +73,12 @@ object ExportPrFileOccurrencesData {
         System.exit(0)
     }
 
+    /**
+     * Fetches files that have been changed in the specified PR and collects their associated filepaths. Filters for
+     * files that have been modified without being created, renamed, or deleted.
+     *
+     * @return an observable of filepaths
+     */
     private fun getFilesChangedInPr(prId: Long, client: BucketListClient, projectKey: String, repoSlug: String):
             Observable<String> {
         logger.debug("Fetching diff for PR " + prId);
@@ -63,6 +87,8 @@ object ExportPrFileOccurrencesData {
                 .first()
                 .flatMap { diffResponse ->
                     logger.debug("Parsing PR for files changed");
+                    // Filter diffs with Null sources or destinations as that indicates a new or deleted file. Then
+                    // filter out diffs where the fullPath has changed to eliminate renamed files.
                     Observable.from(diffResponse.diffs)
                             .filter { diff ->
                                 diff.source != null && diff.destination != null &&
@@ -72,6 +98,12 @@ object ExportPrFileOccurrencesData {
                 }
     }
 
+    /**
+     * Fetches paths for files changed with each PR within the filter criteria, and generates an aggregate Multiset of
+     * filepaths where the counts are the occurrences of each file across PRs.
+     *
+     * @return an observable of a Multiset of filepaths
+     */
     private fun getFlattenedCountOfFilesFromPrs(client: BucketListClient, projectKey: String, repoSlug: String,
                                                 branchFilterSubstring: String, startDate: ZonedDateTime, endDate: ZonedDateTime):
             Observable<Multiset<String>> {
@@ -100,6 +132,10 @@ object ExportPrFileOccurrencesData {
                 })
     }
 
+    /**
+     * Print a list of all files that have been changed across the PRs and their corresponding occurrence count. The
+     * result will be sorted by occurrence count in descending order.
+     */
     private fun printToCsv(outputCsvPath: Path, filesWithCounts: Multiset<String>) {
         val outputCsvFile = outputCsvPath.toFile()
         CSVWriter(FileWriter(outputCsvFile)).use { writer ->
