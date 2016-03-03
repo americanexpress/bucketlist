@@ -13,6 +13,7 @@ import io.aexp.bucketlist.data.PagedResponse
 import io.aexp.bucketlist.data.PullRequest
 import io.aexp.bucketlist.data.PullRequestActivity
 import io.aexp.bucketlist.data.PullRequestCommit
+import io.aexp.bucketlist.data.PullRequestDiffResponse
 import io.aexp.bucketlist.data.PullRequestState
 import io.aexp.bucketlist.data.Ref
 import io.aexp.bucketlist.data.Repo
@@ -75,6 +76,30 @@ class HttpBucketListClient(private val baseUrl: URL,
         requestPrCommitsAndEmit(projectKey, repoSlug, prId, subject, 0)
 
         return subject;
+    }
+
+    override fun getPrDiff(projectKey: String, repoSlug: String, prId: Long, contextLines: Int, whitespace: Boolean,
+                           withComments: Boolean): Observable<PullRequestDiffResponse> {
+        val subject: Subject<PullRequestDiffResponse, PullRequestDiffResponse> = ReplaySubject.create()
+
+        val urlBuilder = UrlBuilder.fromUrl(baseUrl)
+                .pathSegments("rest", "api", "1.0", "projects", projectKey, "repos", repoSlug, "pull-requests",
+                        prId.toString(), "diff")
+                .queryParam("contextLines", contextLines.toString())
+                .queryParam("whitespace", whitespace.toString())
+                .queryParam("withComments", withComments.toString())
+
+        addAuth(httpClient.prepareGet(urlBuilder.toUrlString()))
+                .execute(object : RxResponseHandler<PullRequestDiffResponse>(subject) {
+                    override fun handleSuccessfulResponse(response: Response, observer: Observer<PullRequestDiffResponse>) {
+                        subject.onNext(objectReader
+                                .forType(object : TypeReference<PullRequestDiffResponse>() {})
+                                .readValue(response.responseBodyAsStream))
+                        subject.onCompleted()
+                    }
+                })
+
+        return subject
     }
 
     override fun createPr(projectKey: String, repoSlug: String, title: String, description: String, fromId: String,

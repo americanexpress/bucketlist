@@ -6,6 +6,7 @@ import io.aexp.bucketlist.data.PullRequest
 import io.aexp.bucketlist.data.PullRequestActivity
 import io.aexp.bucketlist.data.PullRequestCommit
 import io.aexp.bucketlist.data.PullRequestState
+import io.aexp.bucketlist.data.PullRequestDiffResponse
 import rx.Observable
 
 interface BucketListClient {
@@ -32,6 +33,12 @@ interface BucketListClient {
      */
     fun getPrCommits(projectKey: String, repoSlug: String, prId: Long):
             Observable<PagedResponse<PullRequestCommit>>
+
+    /**
+     * @return observable of PR diff response
+     */
+    fun getPrDiff(projectKey: String, repoSlug: String, prId: Long, contextLines: Int, whitespace: Boolean,
+                  withComments: Boolean): Observable<PullRequestDiffResponse>
 
     /**
      * @param fromId the commit or treeish that is the source of the PR, e.g. "refs/heads/some-new-branch"
