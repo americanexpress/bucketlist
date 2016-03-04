@@ -82,7 +82,7 @@ object ExportPrFileOccurrencesData {
             Observable<String> {
         logger.debug("Fetching diff for PR " + prId);
 
-        return client.getPrDiff(projectKey, repoSlug, prId, 0, false, false)
+        return client.getPrDiff(projectKey, repoSlug, prId, 0, "ignore-all", false)
                 .first()
                 .flatMap { diffResponse ->
                     logger.debug("Parsing PR for files changed");

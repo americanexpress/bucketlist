@@ -188,7 +188,7 @@ public class HttpBucketListClientTest {
     public void testGetPrDiff() throws IOException {
         Map<String, Object> params = new HashMap();
         params.put("contextLines", "0");
-        params.put("whitespace", "false");
+        params.put("whitespace", "ignore-all");
         params.put("withComments", "false");
 
         driver.addExpectation(
@@ -197,7 +197,7 @@ public class HttpBucketListClientTest {
                 giveResponse(Resources.toString(getResource(getClass(), "getPrDiffResp.json"), UTF_8),
                         "application/json"));
 
-        PullRequestDiffResponse diffResponse = client.getPrDiff(proj, repo, 2, 0, false, false)
+        PullRequestDiffResponse diffResponse = client.getPrDiff(proj, repo, 2, 0, "ignore-all", false)
                 .toBlocking()
                 .first();
 

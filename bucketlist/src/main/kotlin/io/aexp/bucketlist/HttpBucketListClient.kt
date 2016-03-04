@@ -78,7 +78,7 @@ class HttpBucketListClient(private val baseUrl: URL,
         return subject;
     }
 
-    override fun getPrDiff(projectKey: String, repoSlug: String, prId: Long, contextLines: Int, whitespace: Boolean,
+    override fun getPrDiff(projectKey: String, repoSlug: String, prId: Long, contextLines: Int, whitespace: String,
                            withComments: Boolean): Observable<PullRequestDiffResponse> {
         val subject: Subject<PullRequestDiffResponse, PullRequestDiffResponse> = ReplaySubject.create()
 
@@ -86,7 +86,7 @@ class HttpBucketListClient(private val baseUrl: URL,
                 .pathSegments("rest", "api", "1.0", "projects", projectKey, "repos", repoSlug, "pull-requests",
                         prId.toString(), "diff")
                 .queryParam("contextLines", contextLines.toString())
-                .queryParam("whitespace", whitespace.toString())
+                .queryParam("whitespace", whitespace)
                 .queryParam("withComments", withComments.toString())
 
         addAuth(httpClient.prepareGet(urlBuilder.toUrlString()))
