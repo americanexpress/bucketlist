@@ -16,6 +16,7 @@ import io.aexp.bucketlist.data.PullRequestDiff;
 import io.aexp.bucketlist.data.PullRequestDiffResponse;
 import io.aexp.bucketlist.data.PullRequestHunk;
 import io.aexp.bucketlist.data.PullRequestState;
+
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -185,14 +186,14 @@ public class HttpBucketListClientTest {
 
     @Test
     public void testGetPrDiff() throws IOException {
-        Map<String,Object> params = new HashMap();
-        params.put("contextLines","0");
-        params.put("whitespace","false");
-        params.put("withComments","false");
+        Map<String, Object> params = new HashMap();
+        params.put("contextLines", "0");
+        params.put("whitespace", "false");
+        params.put("withComments", "false");
 
         driver.addExpectation(
                 onRequestTo("/rest/api/1.0/projects/" + proj + "/repos/" + repo + "/pull-requests/2/diff")
-                .withParams(params),
+                        .withParams(params),
                 giveResponse(Resources.toString(getResource(getClass(), "getPrDiffResp.json"), UTF_8),
                         "application/json"));
 
@@ -200,8 +201,8 @@ public class HttpBucketListClientTest {
                 .toBlocking()
                 .first();
 
-        assertEquals("16fb16e8afbe6c4087d39feddd68bdc881e302a2",diffResponse.getFromHash());
-        assertEquals("1830d0529a30d3d7253935d918ee0e34e7680c64",diffResponse.getToHash());
+        assertEquals("16fb16e8afbe6c4087d39feddd68bdc881e302a2", diffResponse.getFromHash());
+        assertEquals("1830d0529a30d3d7253935d918ee0e34e7680c64", diffResponse.getToHash());
         assertEquals(2, diffResponse.getDiffs().size());
 
         PullRequestDiff secondDiff = diffResponse.getDiffs().get(1);

@@ -27,8 +27,7 @@ import java.util.ArrayList
  *
  * We wanted to better inform our decision of when to refactor different classes by identifying which were more highly
  * correlated with bugs. So this determines in how many PRs across a given date range was each file changed. With the
- * 'branch filter substring', we were able to reduce the set to only ones including our 'bugfix' prefix. The results are
- * written
+ * 'branch filter substring', we were able to reduce the set to only ones including our 'bugfix' prefix.
  *
  * This example is purely a data generator because we found that inspecting the top of the resulting list provided ample
  * insights to which files experienced the most churn with bugfixes.
@@ -118,7 +117,7 @@ object ExportPrFileOccurrencesData {
                 .filter { pr -> pr.fromRef.id.contains(branchFilterSubstring, true) }
                 .map { pr -> pr.id }
 
-        val multiset: Multiset<String> = HashMultiset.create<String>()
+        val multiset: Multiset<String> = HashMultiset.create()
 
         // For each of the PRs, get list of files that have been changed. Then reduce them into one Multiset to get an
         // occurrence count across PRs
