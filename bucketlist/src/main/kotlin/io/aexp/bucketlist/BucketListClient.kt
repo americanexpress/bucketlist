@@ -37,13 +37,13 @@ interface BucketListClient {
 
     /**
      * @param contextLines "the number of context lines to include around added/removed lines in the diff"
-     * @param whitespace "optional whitespace flag which can be set to 'ignore-all'" Default value is "show"
+     * @param whitespaceMode whether to show or ignore all whitespace changes as part of diff response
      * @param commentMode whether to include comments as part of diff response
      * Param descriptions from official Atlassian documentation for Stash REST API
      *
      * @return observable that emits a single PullRequestDiffResponse
      */
-    fun getPrDiff(projectKey: String, repoSlug: String, prId: Long, contextLines: Int, whitespace: String,
+    fun getPrDiff(projectKey: String, repoSlug: String, prId: Long, contextLines: Int, whitespaceMode: WhitespaceMode,
                   commentMode: CommentMode): Observable<PullRequestDiffResponse>
 
     /**

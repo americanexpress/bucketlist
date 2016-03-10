@@ -196,7 +196,7 @@ public class HttpBucketListClientTest {
                 giveResponse(Resources.toString(getResource(getClass(), "getPrDiffResp.json"), UTF_8),
                         "application/json"));
 
-        PullRequestDiffResponse diffResponse = client.getPrDiff(proj, repo, 2, 0, "ignore-all", CommentMode.WithoutComments)
+        PullRequestDiffResponse diffResponse = client.getPrDiff(proj, repo, 2, 0, WhitespaceMode.IgnoreAll, CommentMode.WithoutComments)
                 .toBlocking()
                 .first();
 
