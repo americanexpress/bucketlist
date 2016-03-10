@@ -3,6 +3,7 @@ package io.aexp.bucketlist.examples.prfileoccurrences
 import com.google.common.collect.HashMultiset
 import com.google.common.collect.Multiset
 import com.google.common.collect.Multisets
+import com.ning.http.client.AsyncHttpClient
 import com.opencsv.CSVWriter
 import io.aexp.bucketlist.BucketListClient
 import io.aexp.bucketlist.WhitespaceMode
@@ -49,7 +50,8 @@ object ExportPrFileOccurrencesData {
 
         val configPath = Paths.get(args[0])
 
-        val client = getBitBucketClient(configPath)
+        val httpClient = AsyncHttpClient()
+        val client = getBitBucketClient(configPath, httpClient)
         val projectKey = args[1]
         val repoSlug = args[2]
         val branchFilterSubstring = args[3]
@@ -67,21 +69,22 @@ object ExportPrFileOccurrencesData {
         val outputCsvPath = Paths.get(args[6])
 
 
-        countFileOccurrencesInPrs(client, projectKey, repoSlug, branchFilterSubstring, outputCsvPath, startDate, endDate);
+        val data = countFileOccurrencesInPrs(client, projectKey, repoSlug, branchFilterSubstring, startDate, endDate);
+
+        printToCsv(outputCsvPath, data)
+
+        httpClient.close()
     }
 
     /**
      * Fetches occurrence counts for files across PRs and writes the output to the specified CSV file
      */
     private fun countFileOccurrencesInPrs(client: BucketListClient, projectKey: String, repoSlug: String,
-                                          branchFilterSubstring: String, outputCsvPath: Path, startDate: ZonedDateTime,
-                                          endDate: ZonedDateTime) {
-        val fileOccurrences = getFlattenedCountOfFilesFromPrs(client, projectKey, repoSlug, branchFilterSubstring, startDate, endDate)
+                                          branchFilterSubstring: String, startDate: ZonedDateTime,
+                                          endDate: ZonedDateTime) : Multiset<String> {
+        return getFlattenedCountOfFilesFromPrs(client, projectKey, repoSlug, branchFilterSubstring, startDate, endDate)
                 .toBlocking()
                 .first()
-
-        printToCsv(outputCsvPath, fileOccurrences)
-        System.exit(0)
     }
 
     /**

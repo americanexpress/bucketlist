@@ -6,8 +6,8 @@ import io.aexp.bucketlist.data.PagedResponse
 import io.aexp.bucketlist.data.PullRequest
 import io.aexp.bucketlist.data.PullRequestActivity
 import io.aexp.bucketlist.data.PullRequestCommit
-import io.aexp.bucketlist.data.PullRequestState
 import io.aexp.bucketlist.data.PullRequestDiffResponse
+import io.aexp.bucketlist.data.PullRequestState
 import rx.Observable
 
 interface BucketListClient {
