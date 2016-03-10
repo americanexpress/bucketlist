@@ -36,7 +36,7 @@ interface BucketListClient {
             Observable<PagedResponse<PullRequestCommit>>
 
     /**
-     * @param contextLines "the number of context lines to include around added/removed lines in the diff"
+     * @param contextLines the number of lines of context to include around added/removed/modified lines in this diff
      * @param whitespaceMode whether to show or ignore all whitespace changes as part of diff response
      * @param commentMode whether to include comments as part of diff response
      * Param descriptions from official Atlassian documentation for Stash REST API
