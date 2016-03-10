@@ -40,7 +40,7 @@ interface BucketListClient {
      * @param withComments "true to embed comments in the diff (the default); otherwise, false to stream the diff without comments"
      * Param descriptions from official Atlassian documentation for Stash REST API
      *
-     * @return observable of PR diff response
+     * @return observable that emits a single PullRequestDiffResponse
      */
     fun getPrDiff(projectKey: String, repoSlug: String, prId: Long, contextLines: Int, whitespace: String,
                   withComments: Boolean): Observable<PullRequestDiffResponse>

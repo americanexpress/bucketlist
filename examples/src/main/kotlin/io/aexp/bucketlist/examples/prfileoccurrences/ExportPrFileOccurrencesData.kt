@@ -29,8 +29,8 @@ import java.util.ArrayList
  * correlated with bugs. So this determines in how many PRs across a given date range was each file changed. With the
  * 'branch filter substring', we were able to reduce the set to only ones including our 'bugfix' prefix.
  *
- * This example is purely a data generator because we found that inspecting the top of the resulting list provided ample
- * insights to which files experienced the most churn with bugfixes.
+ * For this example we found that inspecting the top of the resulting list provided ample insights to which files
+ * experienced the most churn with bugfixes, and thus there is no graphing component.
  *
  * Usages:
  * - make a properties file containing 'username', 'password', and 'url' info for your Bitbucket-Server instance
@@ -51,9 +51,19 @@ object ExportPrFileOccurrencesData {
         val projectKey = args[1]
         val repoSlug = args[2]
         val branchFilterSubstring = args[3]
+
         val startDate = ZonedDateTime.of(LocalDateTime.of(LocalDate.parse(args[4]), LocalTime.MIDNIGHT), ZoneId.of("UTC"))
+        // Make endDate inclusive by adding a day
         val endDate = ZonedDateTime.of(LocalDateTime.of(LocalDate.parse(args[5]), LocalTime.MIDNIGHT), ZoneId.of("UTC"))
+                .plusDays(1)
+
+        if (startDate.isAfter(endDate)) {
+            System.err!!.println("Start date must be before end date")
+            System.exit(1);
+        }
+
         val outputCsvPath = Paths.get(args[6])
+
 
         countFileOccurrencesInPrs(client, projectKey, repoSlug, branchFilterSubstring, outputCsvPath, startDate, endDate);
     }
@@ -83,7 +93,6 @@ object ExportPrFileOccurrencesData {
         logger.debug("Fetching diff for PR " + prId);
 
         return client.getPrDiff(projectKey, repoSlug, prId, 0, "ignore-all", false)
-                .first()
                 .flatMap { diffResponse ->
                     logger.debug("Parsing PR for files changed");
                     // Filter diffs with Null sources or destinations as that indicates a new or deleted file. Then

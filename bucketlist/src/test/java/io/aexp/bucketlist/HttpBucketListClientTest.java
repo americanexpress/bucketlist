@@ -16,7 +16,6 @@ import io.aexp.bucketlist.data.PullRequestDiff;
 import io.aexp.bucketlist.data.PullRequestDiffResponse;
 import io.aexp.bucketlist.data.PullRequestHunk;
 import io.aexp.bucketlist.data.PullRequestState;
-
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -24,7 +23,6 @@ import java.time.ZonedDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import org.hamcrest.BaseMatcher;
 import org.hamcrest.Description;
 import org.junit.Before;
