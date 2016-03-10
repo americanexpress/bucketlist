@@ -1,5 +1,6 @@
 package io.aexp.bucketlist
 
+import io.aexp.bucketlist.data.CommentMode
 import io.aexp.bucketlist.data.Order
 import io.aexp.bucketlist.data.PagedResponse
 import io.aexp.bucketlist.data.PullRequest
@@ -37,13 +38,13 @@ interface BucketListClient {
     /**
      * @param contextLines "the number of context lines to include around added/removed lines in the diff"
      * @param whitespace "optional whitespace flag which can be set to 'ignore-all'" Default value is "show"
-     * @param withComments "true to embed comments in the diff (the default); otherwise, false to stream the diff without comments"
+     * @param commentMode whether to include comments as part of diff response
      * Param descriptions from official Atlassian documentation for Stash REST API
      *
      * @return observable that emits a single PullRequestDiffResponse
      */
     fun getPrDiff(projectKey: String, repoSlug: String, prId: Long, contextLines: Int, whitespace: String,
-                  withComments: Boolean): Observable<PullRequestDiffResponse>
+                  commentMode: CommentMode): Observable<PullRequestDiffResponse>
 
     /**
      * @param fromId the commit or treeish that is the source of the PR, e.g. "refs/heads/some-new-branch"

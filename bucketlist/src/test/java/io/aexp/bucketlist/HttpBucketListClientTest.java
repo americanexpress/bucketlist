@@ -7,6 +7,7 @@ import com.github.restdriver.clientdriver.ClientDriverRule;
 import com.google.common.io.Resources;
 import com.ning.http.client.AsyncHttpClient;
 import io.aexp.bucketlist.auth.Authenticator;
+import io.aexp.bucketlist.data.CommentMode;
 import io.aexp.bucketlist.data.Order;
 import io.aexp.bucketlist.data.PagedResponse;
 import io.aexp.bucketlist.data.PullRequest;
@@ -195,7 +196,7 @@ public class HttpBucketListClientTest {
                 giveResponse(Resources.toString(getResource(getClass(), "getPrDiffResp.json"), UTF_8),
                         "application/json"));
 
-        PullRequestDiffResponse diffResponse = client.getPrDiff(proj, repo, 2, 0, "ignore-all", false)
+        PullRequestDiffResponse diffResponse = client.getPrDiff(proj, repo, 2, 0, "ignore-all", CommentMode.WithoutComments)
                 .toBlocking()
                 .first();
 

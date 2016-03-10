@@ -7,6 +7,7 @@ import com.ning.http.client.AsyncHttpClient
 import com.ning.http.client.Response
 import com.palominolabs.http.url.UrlBuilder
 import io.aexp.bucketlist.auth.Authenticator
+import io.aexp.bucketlist.data.CommentMode
 import io.aexp.bucketlist.data.NewPullRequest
 import io.aexp.bucketlist.data.Order
 import io.aexp.bucketlist.data.PagedResponse
@@ -79,7 +80,7 @@ class HttpBucketListClient(private val baseUrl: URL,
     }
 
     override fun getPrDiff(projectKey: String, repoSlug: String, prId: Long, contextLines: Int, whitespace: String,
-                           withComments: Boolean): Observable<PullRequestDiffResponse> {
+                           commentMode: CommentMode): Observable<PullRequestDiffResponse> {
         val subject: Subject<PullRequestDiffResponse, PullRequestDiffResponse> = ReplaySubject.create()
 
         val urlBuilder = UrlBuilder.fromUrl(baseUrl)
@@ -87,7 +88,7 @@ class HttpBucketListClient(private val baseUrl: URL,
                         prId.toString(), "diff")
                 .queryParam("contextLines", contextLines.toString())
                 .queryParam("whitespace", whitespace)
-                .queryParam("withComments", withComments.toString())
+                .queryParam("withComments", getDiffAPICommentModeValue(commentMode))
 
         addAuth(httpClient.prepareGet(urlBuilder.toUrlString()))
                 .execute(object : RxResponseHandler<PullRequestDiffResponse>(subject) {
@@ -100,6 +101,20 @@ class HttpBucketListClient(private val baseUrl: URL,
                 })
 
         return subject
+    }
+
+    private fun getDiffAPICommentModeValue(commentMode: CommentMode): String {
+        when(commentMode) {
+            CommentMode.WithComments -> return "true"
+            CommentMode.WithoutComments -> return "false"
+        }
+    }
+
+    private fun getDiffAPIWhitespaceModeValue(whitespaceMode: WhitespaceMode): String {
+        when(whitespaceMode) {
+            WhitespaceMode.Show -> return "show"
+            WhitespaceMode.IgnoreAll -> return "ignore-all"
+        }
     }
 
     override fun createPr(projectKey: String, repoSlug: String, title: String, description: String, fromId: String,

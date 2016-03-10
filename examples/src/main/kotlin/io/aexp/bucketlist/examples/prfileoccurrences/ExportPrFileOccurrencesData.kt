@@ -5,6 +5,7 @@ import com.google.common.collect.Multiset
 import com.google.common.collect.Multisets
 import com.opencsv.CSVWriter
 import io.aexp.bucketlist.BucketListClient
+import io.aexp.bucketlist.data.CommentMode
 import io.aexp.bucketlist.data.PullRequestState
 import io.aexp.bucketlist.examples.getBitBucketClient
 import org.slf4j.Logger
@@ -92,7 +93,7 @@ object ExportPrFileOccurrencesData {
             Observable<String> {
         logger.debug("Fetching diff for PR " + prId);
 
-        return client.getPrDiff(projectKey, repoSlug, prId, 0, "ignore-all", false)
+        return client.getPrDiff(projectKey, repoSlug, prId, 0, "ignore-all", CommentMode.WithoutComments)
                 .flatMap { diffResponse ->
                     logger.debug("Parsing PR for files changed");
                     // Filter diffs with Null sources or destinations as that indicates a new or deleted file. Then
