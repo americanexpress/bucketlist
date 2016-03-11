@@ -7,12 +7,14 @@ import com.ning.http.client.AsyncHttpClient
 import com.ning.http.client.Response
 import com.palominolabs.http.url.UrlBuilder
 import io.aexp.bucketlist.auth.Authenticator
+import io.aexp.bucketlist.data.CommentMode
 import io.aexp.bucketlist.data.NewPullRequest
 import io.aexp.bucketlist.data.Order
 import io.aexp.bucketlist.data.PagedResponse
 import io.aexp.bucketlist.data.PullRequest
 import io.aexp.bucketlist.data.PullRequestActivity
 import io.aexp.bucketlist.data.PullRequestCommit
+import io.aexp.bucketlist.data.PullRequestDiffResponse
 import io.aexp.bucketlist.data.PullRequestState
 import io.aexp.bucketlist.data.Ref
 import io.aexp.bucketlist.data.Repo
@@ -75,6 +77,44 @@ class HttpBucketListClient(private val baseUrl: URL,
         requestPrCommitsAndEmit(projectKey, repoSlug, prId, subject, 0)
 
         return subject;
+    }
+
+    override fun getPrDiff(projectKey: String, repoSlug: String, prId: Long, contextLines: Int, whitespaceMode:
+        WhitespaceMode, commentMode: CommentMode): Observable<PullRequestDiffResponse> {
+        val subject: Subject<PullRequestDiffResponse, PullRequestDiffResponse> = ReplaySubject.create()
+
+        val urlBuilder = UrlBuilder.fromUrl(baseUrl)
+                .pathSegments("rest", "api", "1.0", "projects", projectKey, "repos", repoSlug, "pull-requests",
+                        prId.toString(), "diff")
+                .queryParam("contextLines", contextLines.toString())
+                .queryParam("whitespace", getDiffAPIWhitespaceModeValue(whitespaceMode))
+                .queryParam("withComments", getDiffAPICommentModeValue(commentMode))
+
+        addAuth(httpClient.prepareGet(urlBuilder.toUrlString()))
+                .execute(object : RxResponseHandler<PullRequestDiffResponse>(subject) {
+                    override fun handleSuccessfulResponse(response: Response, observer: Observer<PullRequestDiffResponse>) {
+                        subject.onNext(objectReader
+                                .forType(object : TypeReference<PullRequestDiffResponse>() {})
+                                .readValue(response.responseBodyAsStream))
+                        subject.onCompleted()
+                    }
+                })
+
+        return subject
+    }
+
+    private fun getDiffAPICommentModeValue(commentMode: CommentMode): String {
+        when(commentMode) {
+            CommentMode.WITH_COMMENTS -> return "true"
+            CommentMode.WITHOUT_COMMENTS -> return "false"
+        }
+    }
+
+    private fun getDiffAPIWhitespaceModeValue(whitespaceMode: WhitespaceMode): String {
+        when(whitespaceMode) {
+            WhitespaceMode.SHOW -> return "show"
+            WhitespaceMode.IGNORE_ALL -> return "ignore-all"
+        }
     }
 
     override fun createPr(projectKey: String, repoSlug: String, title: String, description: String, fromId: String,

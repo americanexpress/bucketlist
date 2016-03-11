@@ -7,17 +7,23 @@ import com.github.restdriver.clientdriver.ClientDriverRule;
 import com.google.common.io.Resources;
 import com.ning.http.client.AsyncHttpClient;
 import io.aexp.bucketlist.auth.Authenticator;
+import io.aexp.bucketlist.data.CommentMode;
 import io.aexp.bucketlist.data.Order;
 import io.aexp.bucketlist.data.PagedResponse;
 import io.aexp.bucketlist.data.PullRequest;
 import io.aexp.bucketlist.data.PullRequestActivity;
 import io.aexp.bucketlist.data.PullRequestCommit;
+import io.aexp.bucketlist.data.PullRequestDiff;
+import io.aexp.bucketlist.data.PullRequestDiffResponse;
+import io.aexp.bucketlist.data.PullRequestHunk;
 import io.aexp.bucketlist.data.PullRequestState;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.ZonedDateTime;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import org.hamcrest.BaseMatcher;
 import org.hamcrest.Description;
 import org.junit.Before;
@@ -175,6 +181,40 @@ public class HttpBucketListClientTest {
         PullRequestCommit commit2 = page.getValues().get(1);
         assertEquals("commit id 2", commit2.getId());
         assertEquals("Jane", commit2.getAuthor().getName());
+    }
+
+    @Test
+    public void testGetPrDiff() throws IOException {
+        Map<String, Object> params = new HashMap();
+        params.put("contextLines", "0");
+        params.put("whitespace", "ignore-all");
+        params.put("withComments", "false");
+
+        driver.addExpectation(
+                onRequestTo("/rest/api/1.0/projects/" + proj + "/repos/" + repo + "/pull-requests/2/diff")
+                        .withParams(params),
+                giveResponse(Resources.toString(getResource(getClass(), "getPrDiffResp.json"), UTF_8),
+                        "application/json"));
+
+        PullRequestDiffResponse diffResponse = client.getPrDiff(proj, repo, 2, 0, WhitespaceMode.IGNORE_ALL, CommentMode.WITHOUT_COMMENTS)
+                .toBlocking()
+                .first();
+
+        assertEquals("16fb16e8afbe6c4087d39feddd68bdc881e302a2", diffResponse.getFromHash());
+        assertEquals("1830d0529a30d3d7253935d918ee0e34e7680c64", diffResponse.getToHash());
+        assertEquals(2, diffResponse.getDiffs().size());
+
+        PullRequestDiff secondDiff = diffResponse.getDiffs().get(1);
+        assertEquals(null, secondDiff.getSource());
+        assertEquals("Tests/Controllers/MyAwesomeControllerTests.swift", secondDiff.getDestination().getFullPath());
+        assertFalse(secondDiff.getTruncated());
+        assertEquals(2, secondDiff.getHunks().size());
+
+        PullRequestHunk firstHunk = secondDiff.getHunks().get(0);
+        assertEquals(0, firstHunk.getSourceLine());
+        assertEquals(0, firstHunk.getSourceSpan());
+        assertEquals(1, firstHunk.getDestinationLine());
+        assertEquals(46, firstHunk.getDestinationSpan());
     }
 
     @Test

@@ -22,7 +22,7 @@ import java.util.Properties
  * This means that you never have to put the password in a shell command, so it can stay out of your shell history,
  * process listing, etc.
  */
-fun getBitBucketClient(configPath: Path): BucketListClient {
+fun getBitBucketClient(configPath: Path, asyncHttpClient: AsyncHttpClient = AsyncHttpClient()): BucketListClient {
     val props = Properties()
     props.load(Files.newBufferedReader(configPath, StandardCharsets.UTF_8))
 
@@ -35,7 +35,7 @@ fun getBitBucketClient(configPath: Path): BucketListClient {
 
     return HttpBucketListClient(url,
             UsernamePasswordAuthenticator(username, password),
-            AsyncHttpClient(),
+            asyncHttpClient,
             objectMapper.reader(),
             objectMapper.writer())
 }

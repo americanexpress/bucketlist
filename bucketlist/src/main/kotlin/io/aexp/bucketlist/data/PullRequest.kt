@@ -8,6 +8,8 @@ import java.util.Date
 class PullRequest(@JsonProperty("id") val id: Long,
                   @JsonProperty("author") val author: PullRequestAuthor,
                   @JsonProperty("closed") val closed: Boolean,
+                  @JsonProperty("fromRef") val fromRef: PullRequestRef,
+                  @JsonProperty("toRef") val toRef: PullRequestRef,
                   private @JsonProperty("createdDate") val createdDate: Date,
                   private @JsonProperty("updatedDate") val updatedDate: Date) {
 
