@@ -105,15 +105,15 @@ class HttpBucketListClient(private val baseUrl: URL,
 
     private fun getDiffAPICommentModeValue(commentMode: CommentMode): String {
         when(commentMode) {
-            CommentMode.WithComments -> return "true"
-            CommentMode.WithoutComments -> return "false"
+            CommentMode.WITH_COMMENTS -> return "true"
+            CommentMode.WITHOUT_COMMENTS -> return "false"
         }
     }
 
     private fun getDiffAPIWhitespaceModeValue(whitespaceMode: WhitespaceMode): String {
         when(whitespaceMode) {
-            WhitespaceMode.Show -> return "show"
-            WhitespaceMode.IgnoreAll -> return "ignore-all"
+            WhitespaceMode.SHOW -> return "show"
+            WhitespaceMode.IGNORE_ALL -> return "ignore-all"
         }
     }
 

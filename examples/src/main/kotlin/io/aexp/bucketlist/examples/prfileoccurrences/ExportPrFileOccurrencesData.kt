@@ -97,7 +97,7 @@ object ExportPrFileOccurrencesData {
             Observable<String> {
         logger.debug("Fetching diff for PR " + prId);
 
-        return client.getPrDiff(projectKey, repoSlug, prId, 0, WhitespaceMode.IgnoreAll, CommentMode.WithoutComments)
+        return client.getPrDiff(projectKey, repoSlug, prId, 0, WhitespaceMode.IGNORE_ALL, CommentMode.WITHOUT_COMMENTS)
                 .flatMap { diffResponse ->
                     logger.debug("Parsing PR for files changed");
                     // Filter diffs with Null sources or destinations as that indicates a new or deleted file. Then

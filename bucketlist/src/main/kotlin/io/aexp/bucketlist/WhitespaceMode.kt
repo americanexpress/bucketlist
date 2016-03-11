@@ -2,8 +2,8 @@ package io.aexp.bucketlist
 
 
 enum class WhitespaceMode {
-    Show,
-    IgnoreAll
+    SHOW,
+    IGNORE_ALL
 }
 
 

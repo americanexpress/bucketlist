@@ -2,6 +2,6 @@ package io.aexp.bucketlist.data
 
 
 enum class CommentMode {
-    WithComments,
-    WithoutComments
+    WITH_COMMENTS,
+    WITHOUT_COMMENTS
 }
