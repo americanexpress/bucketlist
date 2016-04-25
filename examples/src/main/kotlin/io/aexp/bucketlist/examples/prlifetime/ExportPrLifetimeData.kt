@@ -39,17 +39,23 @@ import java.util.concurrent.TimeUnit
  *
  * Usage:
  * - make a properties file containing 'username', 'password', and 'url' info for your Bitbucket-Server instance.
- * - invoke with <path to props file> <project key> <repo slug> <output file> <start date> <end date>
+ * - invoke with <path to props file> <project key> <repo slug> <output file> <start date> <end date> <start duration from>
  * - dates should be in the format YYYY-MM-DD
  */
 object ExportPrLifetimeData {
 
     val logger: Logger = LoggerFactory.getLogger(javaClass)
+    private const val ARGUMENTS_COUNT = 7
+
+    enum class DurationStart {
+        prCreation,
+        lastPrCommitPushed
+    }
 
     @JvmStatic fun main(args: Array<String>) {
 
-        if (args.size != 6) {
-            System.err!!.println("Must have 6 arguments: <config file> <project key> <repo slug> <output file> <start date> <end date>")
+        if (args.size != ARGUMENTS_COUNT) {
+            System.err!!.println(String.format("Must have %d arguments: <config file> <project key> <repo slug> <output file> <start date> <end date> <start duration from>", ARGUMENTS_COUNT))
             System.exit(1)
         }
 
@@ -62,6 +68,15 @@ object ExportPrLifetimeData {
         val startDate = ZonedDateTime.of(LocalDateTime.of(LocalDate.parse(args[4]), MIDNIGHT), ZoneId.of("UTC"))
         val endDate = ZonedDateTime.of(LocalDateTime.of(LocalDate.parse(args[5]), MIDNIGHT), ZoneId.of("UTC"))
 
+        var startDurationFrom: DurationStart
+        try {
+            startDurationFrom = DurationStart.valueOf(args[6])
+        } catch (e: IllegalArgumentException) {
+            System.err!!.println("`start duration from` parameter must be `prCreation` or `lastPrCommitPushed`")
+            System.exit(1)
+            return
+        }
+
         val boxPlotDataTable = getBoxWhiskerPlotDataTable()
 
         getPrSummariesByWeek(client, projectKey, repoSlug, startDate, endDate)
@@ -69,7 +84,13 @@ object ExportPrLifetimeData {
                     weekOfHours.collect({ -> WeekStats(weekOfHours.key) },
                             { statsHolder, summary ->
                                 // fractional hours
-                                val fractionalHours = summary.duration.toMillis().toDouble() / TimeUnit.HOURS.toMillis(
+                                var duration : Duration
+                                if (startDurationFrom == DurationStart.prCreation) {
+                                    duration = summary.durationSinceStart
+                                } else {
+                                    duration = summary.durationSinceLastPRCommitPushed
+                                }
+                                val fractionalHours = duration.toMillis().toDouble() / TimeUnit.HOURS.toMillis(
                                         1)
                                 logger.info(
                                         "Recording ${weekOfHours.key} pr ${summary.pr.id} duration: $fractionalHours")
@@ -131,8 +152,16 @@ object ExportPrLifetimeData {
      * Wrapper to bundle a PR with its activity
      */
     data class PrSummary(val pr: PullRequest, val activity: List<PullRequestActivity>) {
-        val duration: Duration
+        val durationSinceStart: Duration
             get() = Duration.between(activity.first().createdAt, activity.last().createdAt)
+
+        val durationSinceLastPRCommitPushed: Duration
+            get() {
+                var mergeTime = activity.filter({ event -> event.action == "MERGED" }).last().createdAt
+                var lastCommitTime = activity.filter({ event -> event.action == "RESCOPED" || event.action == "OPENED" }).last().createdAt
+
+                return Duration.between(lastCommitTime, mergeTime)
+            }
 
         val mondayOfWeekOfStart: LocalDate
             get() = pr.createdAt.toLocalDate().with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY))
