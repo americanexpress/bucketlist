@@ -45,7 +45,7 @@ import java.util.concurrent.TimeUnit
 object ExportPrLifetimeData {
 
     val logger: Logger = LoggerFactory.getLogger(javaClass)
-    const val ARGUMENTS_COUNT = 7
+    private const val ARGUMENTS_COUNT = 7
 
     enum class DurationStart {
         prCreation,

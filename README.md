@@ -72,7 +72,8 @@ java -cp examples/build/libs/examples-all.jar \
   some-repo \
   pr-lifetime-data.tsv \
   2015-01-01 \
-  2015-12-31
+  2015-12-31 \
+  prCreation
 ```
 
 And then turn the tsv into a graph:
