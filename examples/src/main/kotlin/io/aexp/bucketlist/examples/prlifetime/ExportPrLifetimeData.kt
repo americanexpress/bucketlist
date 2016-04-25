@@ -45,6 +45,7 @@ import java.util.concurrent.TimeUnit
 object ExportPrLifetimeData {
 
     val logger: Logger = LoggerFactory.getLogger(javaClass)
+    const val ARGUMENTS_COUNT = 7
 
     enum class DurationStart {
         prCreation,
@@ -53,8 +54,8 @@ object ExportPrLifetimeData {
 
     @JvmStatic fun main(args: Array<String>) {
 
-        if (args.size != 7) {
-            System.err!!.println("Must have 6 arguments: <config file> <project key> <repo slug> <output file> <start date> <end date> <start duration from>")
+        if (args.size != ARGUMENTS_COUNT) {
+            System.err!!.println(String.format("Must have %d arguments: <config file> <project key> <repo slug> <output file> <start date> <end date> <start duration from>", ARGUMENTS_COUNT))
             System.exit(1)
         }
 
@@ -156,8 +157,8 @@ object ExportPrLifetimeData {
 
         val durationSinceLastPRCommitPushed: Duration
             get() {
-                var mergeTime: ZonedDateTime = activity.filter({ event -> event.action == "MERGED" }).last().createdAt
-                var lastCommitTime: ZonedDateTime = activity.filter({ event -> event.action == "RESCOPED" || event.action == "OPENED" }).last().createdAt
+                var mergeTime = activity.filter({ event -> event.action == "MERGED" }).last().createdAt
+                var lastCommitTime = activity.filter({ event -> event.action == "RESCOPED" || event.action == "OPENED" }).last().createdAt
 
                 return Duration.between(lastCommitTime, mergeTime)
             }
