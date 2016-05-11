@@ -19,7 +19,19 @@ import java.time.ZonedDateTime
 import java.util.ArrayList
 import java.util.concurrent.TimeUnit
 
-
+/**
+ * This example downloads activity data for every PR in the specified repo and computes the time between when each was
+ * opened and merged, as well as the time between the last pushed commit and when the PR was merged. The results are
+ * written to a csv for later use.
+ *
+ * We wanted to examine different trends in our PR durations before and after some build system changes we had made to see
+ * if there were improvements. So this calculates durations for each PR and saves the raw numbers to a CSV so we could
+ * quickly manipulate them in a graphing software to generate various histograms and averages.
+ *
+ * Usages:
+ * - make a properties file containing 'username', 'password', and 'url' info for your Bitbucket-Server instance
+ * - invoke with <path to props file> <project key> <repo slug> <output file> <start date> <end date>
+ */
 object ExportRawPrLifetimeData {
 
     private const val ARGUMENTS_COUNT = 6
@@ -31,8 +43,8 @@ object ExportRawPrLifetimeData {
         }
 
         val configPath = Paths.get(args[0])
-
         val client = getBitBucketClient(configPath)
+
         val projectKey = args[1]
         val repoSlug = args[2]
         val outputCsvPath = Paths.get(args[3])
@@ -49,6 +61,11 @@ object ExportRawPrLifetimeData {
         System.exit(0)
     }
 
+    /**
+     * Loads PrSummary objects for every PR that was merged within the specified date range
+     *
+     * @return an observable of every PrSummary for the corresponding date range
+     */
     private fun getPrSummaries(client: BucketListClient, projKey: String, repoSlug: String, startDate: ZonedDateTime,
                                endDate: ZonedDateTime) : Observable<PrSummary> {
         return client.getPrs(projKey, repoSlug, PullRequestState.MERGED, Order.OLDEST)
@@ -69,6 +86,9 @@ object ExportRawPrLifetimeData {
                 })
     }
 
+    /**
+     * Writes creation date and durations for PrSummaries
+     */
     private fun printBetterCsv(outputCsvPath: Path, prSummaries: List<PrSummary>) {
         val outputCsvFile = outputCsvPath.toFile()
         CSVWriter(FileWriter(outputCsvFile)).use { writer ->
@@ -94,6 +114,11 @@ object ExportRawPrLifetimeData {
         }
     }
 
+    /**
+     * Converts converts Duration to double representing fractional hours
+     *
+     * @return a double of the fractional hours corresponding to the specified duration
+     */
     private fun getFractionalHoursFromDuration(duration: Duration) : Double {
         return duration.toMillis().toDouble() / TimeUnit.HOURS.toMillis(1)
     }
