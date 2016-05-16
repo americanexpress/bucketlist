@@ -57,7 +57,7 @@ object ExportRawPrLifetimeData {
                 .toBlocking()
                 .first()
 
-        printBetterCsv(outputCsvPath, prSummaries)
+        writeToCSV(outputCsvPath, prSummaries)
         System.exit(0)
     }
 
@@ -89,7 +89,7 @@ object ExportRawPrLifetimeData {
     /**
      * Writes creation date and durations for PrSummaries
      */
-    private fun printBetterCsv(outputCsvPath: Path, prSummaries: List<PrSummary>) {
+    private fun writeToCSV(outputCsvPath: Path, prSummaries: List<PrSummary>) {
         val outputCsvFile = outputCsvPath.toFile()
         CSVWriter(FileWriter(outputCsvFile)).use { writer ->
             val header = ArrayList<String>()
@@ -100,8 +100,7 @@ object ExportRawPrLifetimeData {
 
             for (prSummary in prSummaries) {
                 val row = ArrayList<String>()
-                val pr = prSummary.pr
-                row.add(pr.createdAt.toString())
+                row.add(prSummary.pr.createdAt.toString())
 
                 val hoursSinceStart = getFractionalHoursFromDuration(prSummary.durationSinceStart)
                 row.add(hoursSinceStart.toString())
