@@ -149,25 +149,6 @@ object ExportPrLifetimeData {
     data class WeekStats(val mondayOfWeek: LocalDate, val stats: DescriptiveStatistics = DescriptiveStatistics()) {}
 
     /**
-     * Wrapper to bundle a PR with its activity
-     */
-    data class PrSummary(val pr: PullRequest, val activity: List<PullRequestActivity>) {
-        val durationSinceStart: Duration
-            get() = Duration.between(activity.first().createdAt, activity.last().createdAt)
-
-        val durationSinceLastPRCommitPushed: Duration
-            get() {
-                var mergeTime = activity.filter({ event -> event.action == "MERGED" }).last().createdAt
-                var lastCommitTime = activity.filter({ event -> event.action == "RESCOPED" || event.action == "OPENED" }).last().createdAt
-
-                return Duration.between(lastCommitTime, mergeTime)
-            }
-
-        val mondayOfWeekOfStart: LocalDate
-            get() = pr.createdAt.toLocalDate().with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY))
-    }
-
-    /**
      * Write the populated DataSource into tsv for later graphing
      */
     fun writeData(ds: DataSource, path: Path) {
