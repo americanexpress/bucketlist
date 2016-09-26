@@ -1,6 +1,6 @@
 # What's BucketList for?
 
-BucketList lets you access various types of information about pull requests in [Bitbucket Server](https://www.atlassian.com/software/bitbucket), formerly Stash. You can list them, get detailed info, create them, etc. This is doesn't use the same HTTP API as [Bitbucket](https://www.bitbucket.org) (as opposed to Bitbucket Server), unfortunately, so you cannot use this for both.
+BucketList lets you access various types of information about pull requests in [Bitbucket Server](https://www.atlassian.com/software/bitbucket), formerly Stash. You can list them, get detailed info, create them, etc. This doesn't use the same HTTP API as [Bitbucket.org](https://confluence.atlassian.com/bitbucket/use-the-bitbucket-cloud-rest-apis-222724129.html), unfortunately, so you can only use this for Bitbucket's self-hosted offering.
 
 We built this to evaluate the hypothesis that CI improvements and process changes will improve our productivity with a measurable decrease in PR lifetimes.
 
